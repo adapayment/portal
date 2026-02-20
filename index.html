@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ADA Login</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="overlay"></div>
+  <div class="login-box">
+    <img src="logo.png" alt="ADA Logo" class="logo" />
+    <input id="username" type="text" placeholder="Username" />
+    <input id="password" type="password" placeholder="Password" />
+    <button id="signin">SIGN IN</button>
+    <a href="#">Forgot your password?</a>
+  </div>
+
+  <script>
+
+    let username = document.querySelector("#username");
+    let password = document.querySelector("#password");
+    
+
+    function authenticateUser() {
+      if (username.value === "taslanli24050" && password.value === "Y)517215456348ok") {
+        window.open('./grades.html');
+      } 
+
+    }
+
+    let button = document.getElementById("signin");
+
+    button.onclick = authenticateUser;
+  </script>
+</body>
+</html>
